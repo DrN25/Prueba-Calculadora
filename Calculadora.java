@@ -38,6 +38,11 @@ public class Calculadora {
 	}
 	
 	public static void main(String[] args) {
-		
+		Calculadora calculadora = new Calculadora();
+		int a = calculadora.IngreseVariables1();
+		String operacion = calculadora.IngreseOperacion();
+		int b = calculadora.IngreseVariables2();
+		int resultado = calculadora.Calculadora(a, operacion, b);
+		System.out.println("Resultado: " + resultado);
 	}
 }
