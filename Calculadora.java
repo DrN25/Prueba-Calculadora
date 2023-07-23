@@ -18,6 +18,30 @@ public class Calculadora {
 	}
 	
 	public int Calculadora(int a, String operacion, int b) {
+		int resultados;
+		switch(operacion){
+			case "+":
+				resultado = Suma(a,b);
+				break;
+			case "-":
+				resultado = Resta(a,b);
+				break;
+			case "x":
+				resultado = Multiplicacion(a,b);
+				break;
+			case "/":
+				if(b != 0)
+					resultado = Division(a,b);
+				else{
+					System.out.print("Error: no se puede dividir por 0"
+					resultado = 0;
+				}		
+				break;
+			default:
+				System.out.print("Operacion no valida");
+				resultado = 0;
+		}
+		return resultado;
 	
 	}
 	
